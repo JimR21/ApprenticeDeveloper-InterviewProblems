@@ -1,36 +1,66 @@
 package StringsAndArrays.Problem2.SingleLinkedList;
 
+/**
+ * Node class used in @{@link SingleLinkedList}
+ */
 public class Node {
     String data;
     Node next;
 
-    public Node() {
+	/**
+	 * Default constructor
+	 */
+	public Node() {
         data = null;
         next = null;
     }
 
-    public Node(String data) {
+	/**
+	 * Constructor with initial data
+	 * @param data the string passed as data of the Node
+	 */
+	public Node(String data) {
         this.data = data;
         next = null;
     }
 
-    public String getData() {
+	/**
+	 * Returns the data of the Node
+	 * @return the data of the node as a String
+	 */
+	public String getData() {
         return data;
     }
 
-    public void setData(String data) {
+	/**
+	 * Sets the String data of the Node
+	 * @param data The String data of the Node
+	 */
+	public void setData(String data) {
         this.data = data;
     }
 
-    public Node getNext() {
+	/**
+	 * Get the next Node
+	 * @return The next Node
+	 */
+	public Node getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+	/**
+	 * Set the next Node
+	 * @param next The next Node
+	 */
+	public void setNext(Node next) {
         this.next = next;
     }
 
-    public boolean hasNext() {
+	/**
+	 * Returns true if the Node has a next Node, false otherwise
+	 * @return True if the Node is not the last
+	 */
+	public boolean hasNext() {
         return next != null;
     }
 }

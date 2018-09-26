@@ -1,21 +1,31 @@
 package StringsAndArrays.Problem2.SingleLinkedList;
 
+/**
+ * Simple signle linked list
+ */
 public class SingleLinkedList {
     Node first;
 
-    public SingleLinkedList() {
+	/**
+	 * Default constructor
+	 */
+	public SingleLinkedList() {
         first = new Node();
     }
 
-    public Node getFirst() {
+	/**
+	 * Return the first node of the list
+	 * @return The first node
+	 */
+	public Node getFirst() {
         return first;
     }
 
-    public void setFirst(Node first) {
-        this.first = first;
-    }
-
-    public Node getLast() {
+	/**
+	 * Return the last node of the list
+	 * @return The last node of the list
+	 */
+	public Node getLast() {
         Node node = first;
         while (node.hasNext()) {
             node = node.getNext();
@@ -24,9 +34,9 @@ public class SingleLinkedList {
     }
 
 	/**
-	 * Returns the nth node from the list.
-	 * @param n The number of the node in the list. Starts from 0.
-	 * @return The nth node of the list.
+	 * Returns the nth node from the list
+	 * @param n The number of the node in the list. Starts from 0
+	 * @return The nth node of the list
 	 * @throws IndexOutOfBoundsException
 	 */
 	public Node get(int n) throws IndexOutOfBoundsException {
@@ -41,7 +51,11 @@ public class SingleLinkedList {
 	    return node;
     }
 
-    public int getSize() {
+	/**
+	 * Returns the size of the list
+	 * @return the size of the list
+	 */
+	public int getSize() {
 	    Node node = first;
 	    int i = 0;
 	    if (node != null) {
@@ -53,7 +67,11 @@ public class SingleLinkedList {
 	    return i;
     }
 
-    public void add(String str) {
+	/**
+	 * Add a new node in the list containing the String data passed
+	 * @param str The data of the new node
+	 */
+	public void add(String str) {
         if(first.getData() != null){
             Node node = new Node(str);
             getLast().setNext(node);
