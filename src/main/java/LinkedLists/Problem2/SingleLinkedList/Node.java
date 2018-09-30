@@ -1,4 +1,4 @@
-package StringsAndArrays.Problem2.SingleLinkedList;
+package LinkedLists.Problem2.SingleLinkedList;
 
 /**
  * Node class used in @{@link SingleLinkedList}

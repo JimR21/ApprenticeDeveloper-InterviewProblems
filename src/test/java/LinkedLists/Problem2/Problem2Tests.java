@@ -1,7 +1,7 @@
-package StringsAndArrays.Problem2;
+package LinkedLists.Problem2;
 
-import StringsAndArrays.Problem2.SingleLinkedList.Node;
-import StringsAndArrays.Problem2.SingleLinkedList.SingleLinkedList;
+import LinkedLists.Problem2.SingleLinkedList.Node;
+import LinkedLists.Problem2.SingleLinkedList.SingleLinkedList;
 import junit.framework.TestCase;
 import org.junit.Test;
 

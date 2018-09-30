@@ -1,6 +1,6 @@
-package StringsAndArrays.Problem2;
+package LinkedLists.Problem2;
 
-import StringsAndArrays.Problem2.SingleLinkedList.Node;
+import LinkedLists.Problem2.SingleLinkedList.Node;
 
 /**
  * Find the nth element from the end of a single-linked list.
