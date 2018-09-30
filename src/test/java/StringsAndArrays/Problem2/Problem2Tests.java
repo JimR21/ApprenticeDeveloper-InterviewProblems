@@ -10,7 +10,7 @@ public class Problem2Tests extends TestCase{
 
     public void setUp() {
 	    list = new SingleLinkedList();
-	    for (Integer i = 1; i <= 1000; i++) {
+	    for (Integer i = 1; i <= 10; i++) {
 		    list.add(i.toString());
 	    }
     }

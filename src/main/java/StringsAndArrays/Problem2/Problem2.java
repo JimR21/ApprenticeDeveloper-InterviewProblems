@@ -28,8 +28,9 @@ public class Problem2 {
 	    else {
 		    return n == 0 ? counter : -counter;
 	    }
-	    if (result < 0 && result + counter == -n)
+	    if (result < 0 && result + counter == -n) {
 		    return counter;
+	    }
 	    return result;
     }
 }
